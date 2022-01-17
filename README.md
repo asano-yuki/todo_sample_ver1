@@ -1,6 +1,5 @@
 # デモ
-Todoアプリ
-
+https://user-images.githubusercontent.com/58903360/149772787-7b63dffe-0d7a-43d2-af40-8d5c76db1c1b.mov
 
 # 技術スタック
 - TypeScript
@@ -13,13 +12,17 @@ Todoアプリ
 - MySQL
 - Docker
 
-# 環境構築
-用途に応じて以下
+# 前提条件
+`docker`、`docker-compose`はインストール済とする
 
-webpack-dev-serverで起動したWebサーバー（HMR対応）
+# 環境構築
+当リポジトリをpull後、`docker-compose.yml`が配置されたディレクトリで`docker-compose up`を実行
+
+# ローカルサーバー
+webpack-dev-serverで起動したWebサーバー（ホットリロード対応）
+<br/>
 http://localhost:3000/
 
-nginxのWebサーバー
-http://localhost/
-
-`docker-compose up`
+nginxのWebサーバー（ホットリロード非対応）
+<br/>
+http://localhost/3001/
